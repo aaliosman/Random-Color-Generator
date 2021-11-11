@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<style>
+    main
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(89, 89, 235);
+    }
+    header h1 
+    {
+        color: cornsilk;
+    }
+    .form
+    {
+        width: 80%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .form input
+    {
+        width: 400px;
+        height: 30px;
+        border-radius: 3px;
+        border: 0.3 solid black;
+    }
+    .form button
+    {
+        width: 30%;
+        height: 35px;
+        font-size: 20px;
+        color: snow;
+        cursor: pointer;
+        border: none;
+        margin-left: 5px;
+        border-radius: 3px;
+        background-color: #00A02C;
+    }
+    .bgchange
+    {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        background-color: rgb(135, 135, 236);
+    }
+    .fas
+    {
+        font-size: 20px;
+        color: snow;
+        padding: 5px;
+    }
+    .colorBox
+    {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .colorContain
+    {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        border: none;
+
+    }
+    .fa-window-close
+    {
+        position: relative;
+        left: 60px;
+        bottom: 70px;
+        color: blanchedalmond;
+    }
+</style>
+<body>
+    <header>
+        <h1>Random Colors Generator</h1>
+    </header>
+    <main>
+
+       
+        <section class="form">
+            
+                <input type="text" value="" placeholder="Enter The number of colors">
+                <button class="btn"><i class="fas fa-plus"></i>Add colors</button>
+                
+        
+        </section>
+        <button class="bgchange">Change Background Color</button>
+        <section class="colorBox">
+
+        </section>
+    </main>
+
+   <script src="index.js"></script>
+</body>
+</html>
